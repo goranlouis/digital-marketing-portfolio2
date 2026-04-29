@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "surface-container-lowest": "#0d0e0f",
+                  "secondary-fixed-dim": "#c6c6c7",
+                  "on-tertiary": "#313030",
+                  "on-tertiary-container": "#bfbcbc",
+                  "surface-tint": "#bec2ff",
+                  "surface-container-highest": "#343535",
+                  "surface": "#121414",
+                  "on-primary-fixed": "#00006e",
+                  "on-background": "#e3e2e2",
+                  "inverse-surface": "#e3e2e2",
+                  "surface-bright": "#383939",
+                  "on-secondary-fixed": "#1a1c1c",
+                  "on-primary": "#0001ac",
+                  "on-surface-variant": "#c5c4db",
+                  "primary": "#bec2ff",
+                  "on-primary-container": "#b3b7ff",
+                  "on-secondary-container": "#b4b5b5",
+                  "inverse-primary": "#343dff",
+                  "error": "#ffb4ab",
+                  "inverse-on-surface": "#303031",
+                  "surface-dim": "#121414",
+                  "tertiary-fixed": "#e5e2e1",
+                  "surface-container-high": "#292a2a",
+                  "outline": "#8f8fa4",
+                  "on-tertiary-fixed": "#1c1b1b",
+                  "error-container": "#93000a",
+                  "surface-container": "#1f2020",
+                  "primary-fixed": "#e0e0ff",
+                  "surface-container-low": "#1b1c1c",
+                  "secondary-fixed": "#e2e2e2",
+                  "primary-fixed-dim": "#bec2ff",
+                  "secondary-container": "#454747",
+                  "on-surface": "#e3e2e2",
+                  "on-secondary-fixed-variant": "#454747",
+                  "on-tertiary-fixed-variant": "#474746",
+                  "on-primary-fixed-variant": "#0000ef",
+                  "surface-variant": "#343535",
+                  "on-secondary": "#2f3131",
+                  "outline-variant": "#454558",
+                  "on-error-container": "#ffdad6",
+                  "tertiary-fixed-dim": "#c8c6c5",
+                  "tertiary": "#c8c6c5",
+                  "tertiary-container": "#4d4c4c",
+                  "primary-container": "#0000ff",
+                  "secondary": "#c6c6c7",
+                  "background": "#121414",
+                  "on-error": "#690005"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0px",
+                  "lg": "0px",
+                  "xl": "0px",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "stack-md": "24px",
+                  "container-max": "1440px",
+                  "gutter": "24px",
+                  "unit": "4px",
+                  "stack-sm": "12px",
+                  "stack-lg": "64px",
+                  "margin": "48px"
+          },
+          "fontFamily": {
+                  "headline-md": ["Inter"],
+                  "body-base": ["Inter"],
+                  "display-2xl": ["Inter"],
+                  "label-caps": ["Inter"],
+                  "display-lg": ["Inter"],
+                  "body-sm": ["Inter"]
+          },
+          "fontSize": {
+                  "headline-md": ["30px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                  "body-base": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                  "display-2xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                  "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                  "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                  "body-sm": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body { background-color: #000000; color: #e3e2e2; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .project-card:hover img { filter: grayscale(0%); transition: filter 0.5s ease; }
+    .project-card img { filter: grayscale(100%); transition: filter 0.5s ease; }
+    .project-card:hover .card-border { border-color: #0000FF; }
+  </style>
+</head>
+<body class="font-body-base">
+<!-- TopAppBar Section -->
+<nav class="fixed top-0 w-full z-50 border-b border-zinc-900 bg-black flex justify-between items-center px-12 py-6">
+<div class="text-xl font-black tracking-tighter text-white">ARCHITECT</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-zinc-500 hover:text-white transition-colors duration-300" href="#">Work</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-blue-600 border-b border-blue-600 pb-1 hover:text-white transition-colors duration-300" href="#">Portfolio</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-zinc-500 hover:text-white transition-colors duration-300" href="#">Services</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-zinc-500 hover:text-white transition-colors duration-300" href="#">About</a>
+</div>
+<button class="bg-primary-container text-white px-6 py-2 rounded-full font-label-caps text-[10px] uppercase tracking-widest hover:scale-95 duration-200 transition-transform">
+      Connect
+    </button>
+</nav>
+<main class="pt-32 px-12 max-w-screen-2xl mx-auto">
+<!-- Header Content Section -->
+<header class="grid grid-cols-12 gap-gutter items-end mb-stack-lg">
+<div class="col-span-12 lg:col-span-8">
+<h1 class="font-display-2xl text-display-2xl uppercase mb-6">
+<span class="text-white">Featured</span> <br/>
+<span class="text-primary-container">WORK</span>
+</h1>
+<div class="flex items-start gap-6 border-l-2 border-primary-container pl-6">
+<p class="font-headline-md text-headline-md text-secondary-fixed-dim max-w-2xl">
+            A curated selection of technical precision and creative impact across digital marketing and design.
+          </p>
+</div>
+</div>
+<!-- Filter Buttons Section -->
+<div class="col-span-12 lg:col-span-4 flex justify-end gap-3 pb-2">
+<button class="bg-surface-container-highest text-white px-6 py-2 rounded-full font-label-caps text-xs border border-transparent">
+          All Projects
+        </button>
+<button class="bg-transparent text-secondary-fixed-dim border border-outline px-6 py-2 rounded-full font-label-caps text-xs hover:border-white transition-colors">
+          Graphic Design
+        </button>
+<button class="bg-transparent text-secondary-fixed-dim border border-outline px-6 py-2 rounded-full font-label-caps text-xs hover:border-white transition-colors">
+          Financial Services
+        </button>
+</div>
+</header>
+<!-- Project Grid Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-stack-md">
+<!-- Card 1 -->
+<div class="project-card relative group aspect-video overflow-hidden border border-zinc-900 card-border">
+<img class="w-full h-full object-cover" data-alt="A high-contrast, professional workspace featuring sleek, modern architectural blueprints on a digital screen. The atmosphere is technical and precise, with cool blue ambient lighting reflecting off glass surfaces. Minimalist office furniture and sharp geometric shadows emphasize a clean, structured design aesthetic consistent with a premium architectural firm's portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7nQd2PUFVaNCnhfdIG7i8vQopX3QqEwoFbk4qjjaXTKiarQU_MdS3fHDnQCvNT-8Jq2qyIxpQCsfDo_1q8T3K6cKp3Bjhkio6xvJl8u47c2oLktfVbE4zKxzeOAuzGzdWOA31jfOcWzOOdDyjFob_0egzVrE6eRlYntHgV2QkAZPM2j4EY6duC5EFeiKNVPeFLwFCwBMRviKlbZA_U8tw-mYv2MTj7srVZUE4C7tlCeLgFAnM8OTH-9xXvtLFqEHNimQv5vELGahE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-100"></div>
+<div class="absolute bottom-8 left-8 flex flex-col items-start gap-3">
+<span class="bg-primary-container text-white px-3 py-1 font-label-caps text-[10px] rounded-full">DESIGN SYSTEMS</span>
+<h3 class="font-display-lg text-display-lg text-white font-bold">University of Kentucky Portfolio</h3>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="project-card relative group aspect-video overflow-hidden border border-zinc-900 card-border">
+<img class="w-full h-full object-cover" data-alt="A sophisticated digital dashboard interface displaying complex financial data and crypto market trends. The UI is rendered in a minimalist dark-mode style with vibrant blue accent lines and data visualizations. Sharp, crisp typography and a structured grid layout communicate precision and technical authority, set against a deep black background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCquvoo-twC_YqE_BdVLq8J0pv31Trk7ceW4F_w3hRdZQrU0XHYtYE04e0CvVCGrhroJW-PQ4_ELLeQVsfvIQ_tMnUQl9vopatIsShoacbMlg_-Mf9nCJUaoEKhWf7V-u29uzEPB6JHsBby9nG2oPD1_SVtA-rMYmkSXp5h-_Fm0hB3dgKbClvC2141cNVuHZ-c4a-HjdiqgITJKOeuJDpK-0Lpd4aCKRy7CKZWO4Sql8rlM2bB-eXwouR3SvPlH9qL2c9Gd3Q0VBWC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-100"></div>
+<div class="absolute bottom-8 left-8 flex flex-col items-start gap-3">
+<span class="bg-primary-container text-white px-3 py-1 font-label-caps text-[10px] rounded-full">FINANCIAL TECH</span>
+<h3 class="font-display-lg text-display-lg text-white font-bold">CryptoFlow Dashboard</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="project-card relative group aspect-video overflow-hidden border border-zinc-900 card-border">
+<img class="w-full h-full object-cover" data-alt="Monolithic modern architecture with sharp vertical lines and a brutalist design language. The building is captured in dramatic black and white photography with high contrast, emphasizing structural integrity and precision. The lighting is harsh and direct, creating deep black shadows and brilliant white highlights that align with the architectural precision brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjei915H25q42yffyvY-2L5P8Dze2vvb4ECi0bZj6IjbnxMkAYzJ9fzBoRpSQShMqk0dDvlggx6BhSrbCSqaDCix8Qtz1NKuD-iEQoMSmJw_4dPtNAGy_alRTDFli6IBsAQiGRg07mhDsEeFMEMnYKSwH8XpcwqCf66t9AEE02an23zb9z6Nw3uZ22hmlnJCHc2pozON1WOnk1xcwVtKvmYfS0XD0Wil2yCDRfjFtw8IIXptaW2l-5o94VRlOMs7uLqQuEoC61ZwfG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-100"></div>
+<div class="absolute bottom-8 left-8 flex flex-col items-start gap-3">
+<span class="bg-primary-container text-white px-3 py-1 font-label-caps text-[10px] rounded-full">BRAND IDENTITY</span>
+<h3 class="font-display-lg text-display-lg text-white font-bold">Monolith Brand Guidelines</h3>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="project-card relative group aspect-video overflow-hidden border border-zinc-900 card-border">
+<img class="w-full h-full object-cover" data-alt="A macro shot of integrated circuit patterns and motherboard components illuminated by a sharp blue glow. The visual style is highly technical and digital, representing infrastructure and backend precision. The color palette is restricted to deep blacks and vibrant electrical blues, creating a sense of high-performance engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7CYMbwr-A17RttEMgRvj31tYJm9E62V94hwsB3kuMjYJUccTKIL6U5ck31QsGHRikDY8p8nMSxoMzp5VUbZumwLRsUbHl8bUKANt383IG-v9_yMNs6yqBkX4ejgETbRPfqwgxTj5mBIg6oxqvEsUjMyUKNDC036uBwyKd-xZblrIDaNYI3L1YngdNSyQyd--RXYmXfgwa4eN9s1YZsDRiD1C-0bCICpfcgqA7gACYhahpLwU20oqGimB-gXKZ97yoJe21y4zB7Btf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-100"></div>
+<div class="absolute bottom-8 left-8 flex flex-col items-start gap-3">
+<span class="bg-primary-container text-white px-3 py-1 font-label-caps text-[10px] rounded-full">INFRASTRUCTURE</span>
+<h3 class="font-display-lg text-display-lg text-white font-bold">Network Core Optimization</h3>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="w-full border-t border-zinc-900 bg-black flex flex-col md:flex-row justify-between items-center px-12 py-12 mt-24">
+<div class="font-inter text-[10px] uppercase tracking-[0.2em] font-medium text-zinc-600">
+      © 2024 ARCHITECTURAL SYSTEMS. ALL RIGHTS RESERVED.
+    </div>
+<div class="flex gap-8 mt-6 md:mt-0">
+<a class="font-inter text-[10px] uppercase tracking-[0.2em] font-medium text-zinc-600 hover:text-white transition-colors" href="#">Github</a>
+<a class="font-inter text-[10px] uppercase tracking-[0.2em] font-medium text-zinc-600 hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="font-inter text-[10px] uppercase tracking-[0.2em] font-medium text-zinc-600 hover:text-white transition-colors" href="#">Source Code</a>
+</div>
+</footer>
+</body></html>

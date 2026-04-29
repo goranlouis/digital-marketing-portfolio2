@@ -1,249 +1,179 @@
-﻿<!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Resume & Services | Goran Louis Stephan</title>
+    <meta name="description" content="Experience and professional services in graphic design, financial services, and digital marketing." />
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             "colors": {
-                    "on-secondary-fixed": "#403f3f",
-                    "on-primary": "#005762",
-                    "secondary": "#e5e2e1",
-                    "surface-tint": "#81ecff",
-                    "inverse-primary": "#006976",
-                    "outline": "#777575",
-                    "surface-container-high": "#201f1f",
-                    "error-container": "#9f0519",
-                    "surface-container-highest": "#262626",
-                    "on-background": "#ffffff",
-                    "primary": "#81ecff",
-                    "inverse-on-surface": "#565554",
-                    "tertiary-dim": "#d6c9ee",
-                    "on-primary-container": "#004d57",
-                    "on-tertiary": "#5c5271",
-                    "primary-dim": "#00d4ec",
-                    "on-tertiary-container": "#534968",
-                    "tertiary-fixed": "#e4d7fd",
-                    "secondary-dim": "#d6d4d3",
-                    "on-surface-variant": "#adaaaa",
-                    "on-error": "#490006",
-                    "surface-container-lowest": "#000000",
-                    "primary-container": "#00e3fd",
-                    "on-secondary-container": "#d2d0cf",
-                    "on-tertiary-fixed-variant": "#5d5372",
-                    "secondary-container": "#474746",
-                    "surface-dim": "#0e0e0e",
-                    "secondary-fixed-dim": "#d6d4d3",
-                    "primary-fixed": "#00e3fd",
-                    "error-dim": "#d7383b",
-                    "surface-container-low": "#131313",
-                    "tertiary": "#f1e7ff",
-                    "error": "#ff716c",
-                    "secondary-fixed": "#e5e2e1",
-                    "on-error-container": "#ffa8a3",
-                    "surface": "#0e0e0e",
-                    "on-secondary-fixed-variant": "#5c5b5b",
-                    "surface-bright": "#2c2c2c",
-                    "tertiary-container": "#e4d7fd",
-                    "on-primary-fixed-variant": "#005762",
-                    "surface-container": "#1a1919",
-                    "on-surface": "#ffffff",
-                    "background": "#0e0e0e",
-                    "outline-variant": "#494847",
-                    "on-secondary": "#525151",
-                    "primary-fixed-dim": "#00d4ec",
-                    "inverse-surface": "#fcf8f8",
-                    "on-tertiary-fixed": "#403755",
-                    "tertiary-fixed-dim": "#d6c9ee",
-                    "surface-variant": "#262626",
-                    "on-primary-fixed": "#003840"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
+              "vibrant-blue": "#0000FF",
+              "primary-container": "#0000ff",
             },
             "fontFamily": {
-                    "headline": ["Space Grotesk"],
-                    "body": ["Inter"],
-                    "label": ["Inter"]
+              "inter": ["Inter"],
+              "display-2xl": ["Inter"],
+              "display-lg": ["Inter"],
+              "headline-md": ["Inter"],
+              "label-caps": ["Inter"],
+              "body-base": ["Inter"],
+              "body-sm": ["Inter"]
+            },
+            "spacing": {
+              "stack-lg": "64px",
+              "stack-md": "24px",
+              "stack-sm": "12px",
+              "unit": "4px",
+              "gutter": "24px",
+              "margin": "48px"
+            },
+            "fontSize": {
+              "display-2xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+              "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+              "headline-md": ["30px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+              "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+              "body-base": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+              "body-sm": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}]
             }
           },
         },
       }
     </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-      }
-      .glow-sm:hover {
-        text-shadow: 0 0 8px rgba(129, 236, 255, 0.5);
-      }
-      .asymmetric-grid {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-      }
-      @media (max-width: 768px) {
-        .asymmetric-grid {
-          grid-template-columns: 1fr;
+    <style>
+        body { background-color: #000000; color: #e3e2e2; margin: 0; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
         }
-      }
     </style>
 </head>
-<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
-<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
-<div class="text-xl font-bold tracking-tighter text-[#81ecff] font-headline uppercase tracking-tight">
-                Goran Louis Stephan
+<body class="font-body-base bg-black selection:bg-primary-container selection:text-white">
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 border-b border-zinc-900 bg-black flex justify-between items-center px-8 md:px-12 py-8 max-w-7xl mx-auto sticky top-0 z-50">
+        <div class="text-lg font-black tracking-tighter text-[#0000ff]">GORAN LOUIS STEPHAN</div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-zinc-500 hover:text-white pb-1 transition-colors duration-200 font-inter uppercase tracking-widest text-xs font-semibold" href="home.html">HOME</a>
+            <a class="text-zinc-500 hover:text-white pb-1 transition-colors duration-200 font-inter uppercase tracking-widest text-xs font-semibold" href="portfolio-gallery.html">PORTFOLIO</a>
+            <a class="text-white border-b-2 border-[#0000ff] pb-1 transition-colors duration-200 font-inter uppercase tracking-widest text-xs font-semibold" href="services-contact.html">RESUME/SERVICES</a>
+        </div>
+        <a href="#contact" class="bg-[#0000ff] text-white px-6 py-2 rounded-full font-label-caps text-label-caps scale-95 active:scale-90 transition-transform hover:bg-blue-600 flex items-center justify-center">GET IN TOUCH</a>
+    </nav>
+
+    <main class="mt-20 px-8 md:px-12 max-w-7xl mx-auto">
+        <!-- Experience Section -->
+        <section class="mb-stack-lg pt-12">
+            <span class="font-label-caps text-[#0000ff] mb-stack-sm block uppercase tracking-widest text-xs">Resume</span>
+            <h1 class="text-6xl md:text-8xl font-black text-[#0000ff] mb-stack-lg uppercase tracking-tight">Experience</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <!-- Card 1: Graphic Design -->
+                <div class="bg-[#0C0C0C] border border-zinc-900 p-10 flex flex-col hover:border-zinc-700 transition-all duration-300">
+                    <span class="material-symbols-outlined text-[#0000ff] text-4xl mb-8">colors_spark</span>
+                    <h3 class="font-display-lg text-2xl md:text-3xl text-white mb-4 uppercase font-bold">Graphic Design</h3>
+                    <p class="text-zinc-400 leading-relaxed">Visual identity systems and technical layouts built for digital-first performance marketing.</p>
+                </div>
+                
+                <!-- Card 2: Financial Services -->
+                <div class="bg-[#0000ff] p-10 flex flex-col hover:brightness-110 transition-all duration-300">
+                    <span class="material-symbols-outlined text-white text-4xl mb-8">layers</span>
+                    <h3 class="font-display-lg text-2xl md:text-3xl text-white mb-4 uppercase font-bold">Financial Services</h3>
+                    <div class="space-y-1">
+                        <p class="text-white/80 font-bold mb-2 uppercase text-xs tracking-widest">Life Insurance:</p>
+                        <ul class="text-white/90 text-sm space-y-2">
+                            <li>• Assisting Clients with New Business</li>
+                            <li>• Existing Policy Replacement</li>
+                            <li>• Future Planning</li>
+                            <li>• Whole Life, Term, IUL, Annuity</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Digital Marketing -->
+                <div class="bg-[#0C0C0C] border border-zinc-900 p-10 flex flex-col hover:border-zinc-700 transition-all duration-300">
+                    <span class="material-symbols-outlined text-[#0000ff] text-4xl mb-8">leaderboard</span>
+                    <h3 class="font-display-lg text-2xl md:text-3xl text-white mb-4 uppercase font-bold">Digital Marketing</h3>
+                    <p class="text-zinc-400 leading-relaxed">Data-backed growth strategies and full-funnel optimization for high-growth tech startups.</p>
+                </div>
             </div>
-<div class="hidden md:flex items-center gap-10 font-headline uppercase tracking-tight">
-<a class="text-gray-400 font-medium hover:text-white transition-colors transition-all duration-300" href="home.html">Home</a>
-<a class="text-gray-400 font-medium hover:text-white transition-colors transition-all duration-300" href="portfolio-gallery.html">Portfolio</a>
-<a class="text-[#81ecff] font-bold border-b-2 border-[#81ecff] pb-1 transition-all duration-300" href="services-contact.html">Services</a>
-<a class="text-gray-400 font-medium hover:text-white transition-colors transition-all duration-300" href="services-contact.html#contact">Contact</a>
-</div>
-<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold uppercase py-2 px-6 rounded-sm hover:opacity-90 active:scale-95 transition-all">
-                Get in Touch
-            </button>
-</nav>
-</header>
-<main class="pt-32 pb-20">
-<!-- Hero Section: Services -->
-<section class="max-w-7xl mx-auto px-8 mb-32">
-<div class="mb-16">
-<span class="text-primary font-headline uppercase tracking-[0.2em] text-sm mb-4 block">Capabilities</span>
-<h1 class="text-6xl md:text-8xl font-headline font-bold tracking-tighter leading-none">
-                    Freelance <span class="text-primary">Services</span>.
-                </h1>
-</div>
-<!-- Services Bento Grid -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Content Strategy Card -->
-<div class="bg-surface-container-high p-10 flex flex-col justify-between aspect-square group hover:bg-surface-container-highest transition-colors cursor-default">
-<div>
-<span class="material-symbols-outlined text-primary text-4xl mb-8 block" data-icon="auto_awesome">auto_awesome</span>
-<h3 class="text-3xl font-headline font-bold mb-4 tracking-tight">Content Strategy</h3>
-<p class="text-on-surface-variant leading-relaxed">Defining digital narratives that convert. From SEO-driven architecture to editorial brand voices.</p>
-</div>
-<div class="flex items-center gap-2 text-primary font-headline font-bold uppercase text-xs tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                        View Details <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-<!-- Graphic Design Card -->
-<div class="bg-primary p-10 flex flex-col justify-between aspect-square group transition-all cursor-default">
-<div>
-<span class="material-symbols-outlined text-on-primary text-4xl mb-8 block" data-icon="layers">layers</span>
-<h3 class="text-3xl font-headline font-bold mb-4 tracking-tight text-on-primary">Graphic Design</h3>
-<p class="text-on-primary/80 leading-relaxed">Visual identity systems and technical layouts built for digital-first performance marketing.</p>
-</div>
-<div class="flex items-center gap-2 text-on-primary font-headline font-bold uppercase text-xs tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                        View Details <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-<!-- Marketing Consultation Card -->
-<div class="bg-surface-container-high p-10 flex flex-col justify-between aspect-square group hover:bg-surface-container-highest transition-colors cursor-default">
-<div>
-<span class="material-symbols-outlined text-primary text-4xl mb-8 block" data-icon="monitoring">monitoring</span>
-<h3 class="text-3xl font-headline font-bold mb-4 tracking-tight">Marketing Consultation</h3>
-<p class="text-on-surface-variant leading-relaxed">Data-backed growth strategies and full-funnel optimization for high-growth tech startups.</p>
-</div>
-<div class="flex items-center gap-2 text-primary font-headline font-bold uppercase text-xs tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                        View Details <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="bg-surface-container-low py-32">
-<div class="max-w-7xl mx-auto px-8 asymmetric-grid gap-20">
-<!-- Contact Details -->
-<div class="flex flex-col justify-center">
-<span class="text-primary font-headline uppercase tracking-[0.2em] text-sm mb-6 block">Contact</span>
-<h2 class="text-6xl font-headline font-bold tracking-tighter mb-12">Let's <span class="text-primary-dim">Connect</span>.</h2>
-<div class="space-y-8">
-<div class="flex flex-col gap-1">
-<span class="text-on-surface-variant text-xs uppercase tracking-widest font-headline">Email Address</span>
-<a class="text-2xl font-headline font-medium hover:text-primary transition-colors" href="mailto:goranstephanbusiness@gmail.com">goranstephanbusiness@gmail.com</a>
-</div>
-<div class="flex gap-12 pt-8">
-<a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group" href="https://www.linkedin.com/in/goranlstephan/" target="_blank">
-<span class="material-symbols-outlined text-lg" data-icon="link">link</span>
-<span class="font-headline font-bold uppercase text-sm tracking-tight">LinkedIn</span>
-</a>
-<a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group" href="https://www.instagram.com/goranlstephan/" target="_blank">
-<span class="material-symbols-outlined text-lg" data-icon="photo_camera">photo_camera</span>
-<span class="font-headline font-bold uppercase text-sm tracking-tight">Instagram</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Contact Form / CTA -->
-<div class="bg-surface-container-highest p-12 relative overflow-hidden">
-<div class="relative z-10">
-<h3 class="text-3xl font-headline font-bold mb-8">Ready to start a project?</h3>
-<form action="#" class="space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-xs uppercase tracking-widest font-headline text-on-surface-variant">Name</label>
-<input class="w-full bg-surface-container border-none p-4 focus:ring-1 focus:ring-primary text-on-surface text-sm rounded-sm" placeholder="John Doe" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="text-xs uppercase tracking-widest font-headline text-on-surface-variant">Email</label>
-<input class="w-full bg-surface-container border-none p-4 focus:ring-1 focus:ring-primary text-on-surface text-sm rounded-sm" placeholder="john@example.com" type="email"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-xs uppercase tracking-widest font-headline text-on-surface-variant">Message</label>
-<textarea class="w-full bg-surface-container border-none p-4 focus:ring-1 focus:ring-primary text-on-surface text-sm rounded-sm" placeholder="Tell me about your vision..." rows="4"></textarea>
-</div>
-<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold uppercase py-4 rounded-sm hover:opacity-90 active:scale-[0.98] transition-all tracking-widest" type="submit">
-                                Send Message
-                            </button>
-</form>
-</div>
-<!-- Decorative Element -->
-<div class="absolute -bottom-20 -right-20 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"></div>
-</div>
-</div>
-</section>
-<!-- Newsletter / Secondary CTA Section -->
-<section class="max-w-7xl mx-auto px-8 mt-32 mb-20 text-center">
-<div class="bg-surface-container-high py-20 px-10 relative overflow-hidden">
-<div class="max-w-2xl mx-auto relative z-10">
-<h2 class="text-4xl font-headline font-bold mb-4 tracking-tight">Stay in the Kinetic Loop</h2>
-<p class="text-on-surface-variant mb-10">Occasional insights on marketing, design, and digital strategy delivered to your inbox.</p>
-<div class="flex flex-col md:flex-row gap-4 justify-center">
-<input class="bg-surface-container-low border-none p-4 text-on-surface min-w-[300px] rounded-sm focus:ring-1 focus:ring-primary" placeholder="Enter your email" type="email"/>
-<button class="bg-white text-black font-headline font-bold uppercase px-8 py-4 rounded-sm hover:bg-primary transition-colors tracking-tight">Subscribe</button>
-</div>
-</div>
-<!-- Ghost image background -->
-<div class="absolute inset-0 opacity-5 pointer-events-none">
-<div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80')] bg-cover bg-center" data-alt="abstract digital matrix pattern with glowing lines and technical grid overlay in dark monochrome blue"></div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-[#000000] w-full py-12">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 border-t border-[#262626]/30 pt-12">
-<div class="text-[#81ecff] font-['Inter'] text-sm tracking-wide opacity-80 hover:opacity-100 transition-all mb-4 md:mb-0">
-                Â© 2024 Goran Louis Stephan. Kinetic Command.
+        </section>
+
+        <!-- Visual Break -->
+        <div class="w-full h-96 mb-stack-lg overflow-hidden border border-zinc-900 relative">
+            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHpNOYH7k6mqWOH8pCdjWl0OvZSxSM-zidg3sxmPxlfRjep-GfZJRDeCy3_bpuNe4vW9dvUKJLseWqUsmrBuM9obfmWtcM0LCx7MoXadJaqid2uE0kFE04J5M5E1tINQm20jhJ4uJYnMTBvUth-GnBzPmty4Rj8tdQRNgaSsYhoaFPfb9GUyddTbE0oU6H91jcjoZe6Pq6BbpME7RV6quVr86nl323wkncC5j3gVH_OK9Y_ccOZ3MuqSGujMGZOi05jEP-9mG1CglU"/>
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg pb-stack-lg">
+            <!-- Left Side -->
+            <div class="flex flex-col justify-center">
+                <h2 class="text-6xl md:text-7xl font-black text-white mb-8 uppercase tracking-tight">
+                    Let's <span class="text-[#0000ff]">Connect.</span>
+                </h2>
+                <div class="mb-12">
+                    <span class="font-label-caps text-[#0000ff] mb-2 block uppercase tracking-widest text-xs">Email Address</span>
+                    <a class="text-2xl md:text-3xl font-bold text-white hover:text-[#0000ff] transition-colors" href="mailto:goranstephanbusiness@gmail.com">
+                        goranstephanbusiness@gmail.com
+                    </a>
+                </div>
+                <div class="flex gap-12">
+                    <a class="flex items-center gap-3 text-zinc-500 hover:text-white transition-colors group" href="#">
+                        <span class="material-symbols-outlined group-hover:text-[#0000ff]" data-icon="alternate_email">link</span>
+                        <span class="font-bold uppercase tracking-widest text-xs">LinkedIn</span>
+                    </a>
+                    <a class="flex items-center gap-3 text-zinc-500 hover:text-white transition-colors group" href="#">
+                        <span class="material-symbols-outlined group-hover:text-[#0000ff]" data-icon="photo_camera">photo_camera</span>
+                        <span class="font-bold uppercase tracking-widest text-xs">Instagram</span>
+                    </a>
+                </div>
             </div>
-<div class="flex gap-8 font-['Inter'] text-sm tracking-wide">
-<a class="text-gray-500 hover:text-[#81ecff] hover:glow-sm transition-all opacity-80 hover:opacity-100" href="https://www.linkedin.com/in/goranlstephan/">LinkedIn</a>
-<a class="text-gray-500 hover:text-[#81ecff] hover:glow-sm transition-all opacity-80 hover:opacity-100" href="https://www.instagram.com/goranlstephan/">Instagram</a>
-<a class="text-gray-500 hover:text-[#81ecff] hover:glow-sm transition-all opacity-80 hover:opacity-100" href="mailto:goranstephanbusiness@gmail.com">Email</a>
-</div>
-</div>
-</footer>
-</body></html>
+            
+            <!-- Right Side Form -->
+            <div class="bg-[#0C0C0C] border border-zinc-900 p-12">
+                <h3 class="text-3xl font-bold text-white mb-10 uppercase tracking-tight">Ready to start a project?</h3>
+                <form class="space-y-8">
+                    <div class="group border-b border-zinc-800 focus-within:border-[#0000ff] transition-colors pb-4">
+                        <label class="font-bold text-zinc-600 group-focus-within:text-[#0000ff] block mb-2 text-xs uppercase tracking-widest">Name</label>
+                        <input class="w-full bg-transparent border-none text-white focus:ring-0 placeholder:text-zinc-800 p-0" placeholder="Your full name" type="text"/>
+                    </div>
+                    <div class="group border-b border-zinc-800 focus-within:border-[#0000ff] transition-colors pb-4">
+                        <label class="font-bold text-zinc-600 group-focus-within:text-[#0000ff] block mb-2 text-xs uppercase tracking-widest">Email</label>
+                        <input class="w-full bg-transparent border-none text-white focus:ring-0 placeholder:text-zinc-800 p-0" placeholder="your@email.com" type="email"/>
+                    </div>
+                    <div class="group border-b border-zinc-800 focus-within:border-[#0000ff] transition-colors pb-4">
+                        <label class="font-bold text-zinc-600 group-focus-within:text-[#0000ff] block mb-2 text-xs uppercase tracking-widest">Message</label>
+                        <textarea class="w-full bg-transparent border-none text-white focus:ring-0 placeholder:text-zinc-800 p-0" placeholder="Tell me about your vision" rows="3"></textarea>
+                    </div>
+                    <button class="w-full bg-cyan-400 hover:bg-cyan-500 text-black font-black py-5 uppercase tracking-[0.2em] text-xs transition-all active:scale-[0.98]" type="submit">
+                        SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full border-t border-zinc-900 bg-black mt-24">
+        <div class="max-w-7xl mx-auto px-8 md:px-12 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="font-inter text-[10px] uppercase tracking-[0.2em] font-medium text-zinc-600">
+                © 2024 Goran Louis Stephan. ALL RIGHTS RESERVED.
+            </div>
+            <div class="flex gap-8">
+                <a class="font-inter text-[10px] uppercase tracking-[0.2em] font-medium text-zinc-600 hover:text-[#0000ff] transition-colors" href="#">LinkedIn</a>
+                <a class="font-inter text-[10px] uppercase tracking-[0.2em] font-medium text-zinc-600 hover:text-[#0000ff] transition-colors" href="#">Instagram</a>
+                <a class="font-inter text-[10px] uppercase tracking-[0.2em] font-medium text-zinc-600 hover:text-[#0000ff] transition-colors" href="#">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,249 +1,152 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Goran Louis Stephan | Digital Marketing &amp; Sales Specialist</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Goran Louis Stephan | Digital Marketing &amp; Sales Specialist</title>
+    <meta name="description" content="Goran Louis Stephan is a Digital Marketing and Sales Specialist focusing on Financial Services and Life Insurance." />
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             "colors": {
-                    "on-secondary-fixed": "#403f3f",
-                    "on-primary": "#005762",
-                    "secondary": "#e5e2e1",
-                    "surface-tint": "#81ecff",
-                    "inverse-primary": "#006976",
-                    "outline": "#777575",
-                    "surface-container-high": "#201f1f",
-                    "error-container": "#9f0519",
-                    "surface-container-highest": "#262626",
-                    "on-background": "#ffffff",
-                    "primary": "#81ecff",
-                    "inverse-on-surface": "#565554",
-                    "tertiary-dim": "#d6c9ee",
-                    "on-primary-container": "#004d57",
-                    "on-tertiary": "#5c5271",
-                    "primary-dim": "#00d4ec",
-                    "on-tertiary-container": "#534968",
-                    "tertiary-fixed": "#e4d7fd",
-                    "secondary-dim": "#d6d4d3",
-                    "on-surface-variant": "#adaaaa",
-                    "on-error": "#490006",
-                    "surface-container-lowest": "#000000",
-                    "primary-container": "#00e3fd",
-                    "on-secondary-container": "#d2d0cf",
-                    "on-tertiary-fixed-variant": "#5d5372",
-                    "secondary-container": "#474746",
-                    "surface-dim": "#0e0e0e",
-                    "secondary-fixed-dim": "#d6d4d3",
-                    "primary-fixed": "#00e3fd",
-                    "error-dim": "#d7383b",
-                    "surface-container-low": "#131313",
-                    "tertiary": "#f1e7ff",
-                    "error": "#ff716c",
-                    "secondary-fixed": "#e5e2e1",
-                    "on-error-container": "#ffa8a3",
-                    "surface": "#0e0e0e",
-                    "on-secondary-fixed-variant": "#5c5b5b",
-                    "surface-bright": "#2c2c2c",
-                    "tertiary-container": "#e4d7fd",
-                    "on-primary-fixed-variant": "#005762",
-                    "surface-container": "#1a1919",
-                    "on-surface": "#ffffff",
-                    "background": "#0e0e0e",
-                    "outline-variant": "#494847",
-                    "on-secondary": "#525151",
-                    "primary-fixed-dim": "#00d4ec",
-                    "inverse-surface": "#fcf8f8",
-                    "on-tertiary-fixed": "#403755",
-                    "tertiary-fixed-dim": "#d6c9ee",
-                    "surface-variant": "#262626",
-                    "on-primary-fixed": "#003840"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
+              "primary-container": "#0000ff",
+              "surface-container-lowest": "#0d0e0f",
             },
             "fontFamily": {
-                    "headline": ["Space Grotesk"],
-                    "body": ["Inter"],
-                    "label": ["Inter"]
+              "inter": ["Inter"],
+              "display-2xl": ["Inter"],
+              "display-lg": ["Inter"],
+              "label-caps": ["Inter"],
+              "body-base": ["Inter"],
+              "body-sm": ["Inter"]
+            },
+            "spacing": {
+              "stack-lg": "64px",
+              "stack-md": "24px",
+              "stack-sm": "12px",
+              "unit": "4px",
+              "gutter": "24px",
+              "margin": "48px"
+            },
+            "fontSize": {
+              "display-2xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+              "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+              "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+              "body-base": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+              "body-sm": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}]
             }
           },
         },
       }
     </script>
-<style>
+    <style>
+        body { background-color: #000000; color: #ffffff; margin: 0; }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .glow-hover:hover {
-            box-shadow: 0 0 20px rgba(129, 236, 255, 0.2);
-        }
-        .kinetic-gradient {
-            background: linear-gradient(135deg, #81ecff 0%, #00e3fd 100%);
+            display: inline-block;
+            vertical-align: middle;
         }
     </style>
 </head>
-<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary-fixed">
-<!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
-<div class="text-xl font-bold tracking-tighter text-[#81ecff] font-['Space_Grotesk'] uppercase tracking-tight">
-                Goran Louis Stephan
+<body class="font-body-base bg-black selection:bg-primary-container selection:text-white">
+    <!-- Top Navigation Bar -->
+    <nav class="bg-black text-blue-700 font-inter uppercase tracking-widest text-xs font-medium border-b border-zinc-900 flex justify-between items-center w-full px-8 md:px-12 py-8 max-w-7xl mx-auto sticky top-0 z-50">
+        <div class="text-lg font-black tracking-tighter text-[#0000ff]">GORAN LOUIS STEPHAN</div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-white border-b-2 border-[#0000ff] pb-1 transition-colors duration-200" href="home.html">HOME</a>
+            <a class="text-zinc-500 hover:text-white pb-1 transition-colors duration-200" href="portfolio-gallery.html">PORTFOLIO</a>
+            <a class="text-zinc-500 hover:text-white pb-1 transition-colors duration-200" href="services-contact.html">RESUME/SERVICES</a>
+        </div>
+        <a href="services-contact.html#contact" class="bg-[#0000ff] text-white px-6 py-2 rounded-full font-label-caps text-label-caps scale-95 active:scale-90 transition-transform hover:bg-blue-600 flex items-center justify-center">GET IN TOUCH</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-8 md:px-12 min-h-[calc(100vh-176px)]">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-stack-lg">
+            <!-- Left: Profile Image & Status Box -->
+            <div class="md:col-span-5 flex flex-col gap-stack-md">
+                <div class="aspect-[4/5] overflow-hidden bg-zinc-900 border border-zinc-800">
+                    <img alt="Goran Louis Stephan Profile" class="w-full h-full object-cover grayscale-0 hover:grayscale transition-all duration-700" src="assets/img/profile.jpg"/>
+                </div>
+                <!-- Current Status Box -->
+                <div class="bg-[#0d0e0f] border-l-4 border-[#0000ff] p-stack-md">
+                    <div class="text-[#0000ff] font-label-caps text-label-caps mb-2 uppercase tracking-widest text-xs">CURRENT STATUS</div>
+                    <div class="text-white font-bold mb-4">Financial Services - Life Insurance:</div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-zinc-400 text-sm">
+                            <span class="w-1.5 h-1.5 bg-[#0000ff]"></span> Assisting Clients with New Business
+                        </li>
+                        <li class="flex items-center gap-2 text-zinc-400 text-sm">
+                            <span class="w-1.5 h-1.5 bg-[#0000ff]"></span> Existing Policy Replacement
+                        </li>
+                        <li class="flex items-center gap-2 text-zinc-400 text-sm">
+                            <span class="w-1.5 h-1.5 bg-[#0000ff]"></span> Future Planning
+                        </li>
+                        <li class="flex items-center gap-2 text-zinc-400 text-sm">
+                            <span class="w-1.5 h-1.5 bg-[#0000ff]"></span> Whole Life, Term, IUL, Annuity
+                        </li>
+                    </ul>
+                </div>
             </div>
-<div class="hidden md:flex items-center space-x-10">
-<a class="text-[#81ecff] font-bold border-b-2 border-[#81ecff] pb-1 font-['Space_Grotesk'] uppercase tracking-tight" href="home.html">Home</a>
-<a class="text-gray-400 font-medium hover:text-white transition-colors hover:text-[#81ecff] transition-all duration-300 font-['Space_Grotesk'] uppercase tracking-tight" href="portfolio-gallery.html">Portfolio</a>
-<a class="text-gray-400 font-medium hover:text-white transition-colors hover:text-[#81ecff] transition-all duration-300 font-['Space_Grotesk'] uppercase tracking-tight" href="services-contact.html">Services</a>
-<a class="text-gray-400 font-medium hover:text-white transition-colors hover:text-[#81ecff] transition-all duration-300 font-['Space_Grotesk'] uppercase tracking-tight" href="services-contact.html#contact">Contact</a>
-</div>
-<button class="bg-primary text-on-primary-fixed px-6 py-2 rounded-sm font-bold uppercase tracking-widest text-xs hover:scale-95 duration-200 ease-in-out glow-hover font-['Space_Grotesk']">
-                Get in Touch
-            </button>
-</div>
-</nav>
-<main class="pt-32">
-<!-- Hero Section -->
-<section class="relative max-w-7xl mx-auto px-8 py-20 overflow-visible">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-<!-- Hero Content (Asymmetric Placement) -->
-<div class="md:col-span-7 z-10">
-<div class="mb-6 inline-flex items-center gap-2 px-3 py-1 bg-surface-container-highest rounded-full border border-outline-variant/15">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="text-[10px] font-label font-medium uppercase tracking-[0.2em] text-on-surface-variant">Available for Freelance</span>
-</div>
-<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9] mb-8">
-<span class="block">Goran</span>
-<span class="block text-primary">Louis Stephan</span>
-</h1>
-<p class="font-headline text-xl md:text-2xl text-secondary-dim font-light tracking-tight mb-6 max-w-xl border-l-2 border-primary/30 pl-6">
-                        Digital Marketing &amp; Sales Specialist <span class="text-primary/40 px-2">|</span> 
-                        Life Insurance Sales <span class="text-primary/40 px-2">|</span> 
-                        Graphic Designer
-                    </p>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-10 max-w-lg">
-                        Driving exponential growth through a synthesis of data-driven creative strategy and technical precision. Specializing in freelance marketing ecosystems that convert attention into sustainable revenue.
-                    </p>
-<div class="flex flex-wrap gap-4">
-<a class="kinetic-gradient text-on-primary-fixed px-10 py-4 rounded-sm font-headline font-bold uppercase tracking-widest text-sm glow-hover transition-all flex items-center gap-2" href="#gallery">
-                            Explore My Work
-                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
-</a>
-<a class="bg-transparent border border-outline-variant/30 text-white px-10 py-4 rounded-sm font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-container-highest transition-all flex items-center gap-2" href="#contact">
-                            Let's Talk
-                        </a>
-</div>
-</div>
-<!-- Profile Picture (Asymmetric/Layered) -->
-<div class="md:col-span-5 relative">
-<div class="absolute -top-12 -left-12 w-32 h-32 border-t-2 border-l-2 border-primary/20"></div>
-<div class="absolute -bottom-12 -right-12 w-48 h-48 border-b-2 border-r-2 border-primary/20"></div>
-<div class="relative aspect-[4/5] bg-surface-container-low rounded-sm overflow-hidden group">
-<img alt="Goran Louis Stephan" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="A professional portrait of a man in his late 20s with a confident expression, dramatic cinematic lighting on a dark background, high-end editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzw85StHZb8P9isws7gme0yfCjQMQXGQzJe1D1kjEBUDUfgZlT-wVnnLgvhjdJ6Ck-0grG-0UOgzO2RWJslGC2YdvB539YRmmLbm8M9p3wc39cLvnhAWCbB3s8o56eg_jWXIpNCCNatwKroXxrEltB4K1lzeaN60gNDdExDeI0KCvKYsRg8wgajhHhL8W50bqv13ZHpL5D4xkeYt0r5v64Owzx_hVPJ8J7NMPpEsx4tsbBJ9svAmz_dIFRV4xKoS9THfZahZGI0TPc"/>
-<!-- Tech Overlay Element -->
-<div class="absolute bottom-6 left-6 right-6 p-6 bg-surface-container-lowest/80 backdrop-blur-md border-l-2 border-primary">
-<div class="flex flex-col gap-1">
-<span class="text-[10px] font-label text-primary uppercase tracking-widest">Current Status</span>
-<span class="text-sm font-headline font-medium">Architecting Digital Futures</span>
-</div>
-</div>
-</div>
-<!-- Decorative Background Element -->
-<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/5 blur-[120px] rounded-full"></div>
-</div>
-</div>
-</section>
-<!-- Technical Specs / Experience Bar -->
-<section class="bg-surface-container-lowest py-20 mt-20">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
-<div class="flex flex-col gap-2">
-<span class="font-label text-primary text-xs uppercase tracking-widest">Performance</span>
-<span class="font-headline text-4xl font-bold tracking-tighter">150%</span>
-<span class="text-on-surface-variant text-sm">Avg. Conversion Lift</span>
-</div>
-<div class="flex flex-col gap-2">
-<span class="font-label text-primary text-xs uppercase tracking-widest">Experience</span>
-<span class="font-headline text-4xl font-bold tracking-tighter">8+ Yrs</span>
-<span class="text-on-surface-variant text-sm">Industry Authority</span>
-</div>
-<div class="flex flex-col gap-2">
-<span class="font-label text-primary text-xs uppercase tracking-widest">Clients</span>
-<span class="font-headline text-4xl font-bold tracking-tighter">45+</span>
-<span class="text-on-surface-variant text-sm">Global Partners</span>
-</div>
-<div class="flex flex-col gap-2">
-<span class="font-label text-primary text-xs uppercase tracking-widest">Core Speed</span>
-<span class="font-headline text-4xl font-bold tracking-tighter">4.2s</span>
-<span class="text-on-surface-variant text-sm">Avg. Iteration Cycle</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Brief Strategy Section (Bento Lite) -->
-<section class="max-w-7xl mx-auto px-8 py-32">
-<h2 class="font-headline text-3xl font-bold uppercase tracking-tighter mb-16 flex items-center gap-4">
-                Kinetic Capabilities
-                <span class="h-[1px] flex-grow bg-outline-variant/30"></span>
-</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Strategic Card -->
-<div class="bg-surface-container p-10 rounded-sm border-l-4 border-primary/20 hover:border-primary transition-all group">
-<span class="material-symbols-outlined text-primary text-4xl mb-6">insights</span>
-<h3 class="font-headline text-xl font-bold mb-4 uppercase">Growth Strategy</h3>
-<p class="text-on-surface-variant leading-relaxed mb-6">Advanced market positioning using algorithmic data analysis to identify untapped growth vectors.</p>
-<ul class="space-y-3 font-label text-xs uppercase tracking-wider text-primary/70">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary/40 rounded-full"></span> Market Analysis</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary/40 rounded-full"></span> Funnel Architecture</li>
-</ul>
-</div>
-<!-- Creative Card -->
-<div class="bg-surface-container-high p-10 rounded-sm group">
-<span class="material-symbols-outlined text-primary text-4xl mb-6">brush</span>
-<h3 class="font-headline text-xl font-bold mb-4 uppercase">Visual Command</h3>
-<p class="text-on-surface-variant leading-relaxed mb-6">High-fidelity graphic design that maintains brand integrity while optimizing for digital performance.</p>
-<ul class="space-y-3 font-label text-xs uppercase tracking-wider text-primary/70">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary/40 rounded-full"></span> UI/UX Design</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary/40 rounded-full"></span> Brand Identity</li>
-</ul>
-</div>
-<!-- Content Card -->
-<div class="bg-surface-container p-10 rounded-sm border-r-4 border-primary/20 hover:border-primary transition-all group">
-<span class="material-symbols-outlined text-primary text-4xl mb-6">dynamic_feed</span>
-<h3 class="font-headline text-xl font-bold mb-4 uppercase">Content Ecosystems</h3>
-<p class="text-on-surface-variant leading-relaxed mb-6">Strategic content distribution models designed to build authority and drive organic engagement.</p>
-<ul class="space-y-3 font-label text-xs uppercase tracking-wider text-primary/70">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary/40 rounded-full"></span> Social Strategy</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary/40 rounded-full"></span> Narrative Design</li>
-</ul>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-[#000000] w-full py-12 border-t border-[#262626]/30">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8">
-<div class="font-['Inter'] text-sm tracking-wide text-gray-500 mb-6 md:mb-0">
-                Â© 2024 Goran Louis Stephan. Kinetic Command.
+
+            <!-- Right: Identity & CTA -->
+            <div class="md:col-span-7 flex flex-col justify-center gap-stack-lg pl-0 md:pl-margin mt-12 md:mt-0">
+                <div class="flex flex-col gap-4">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900/50 border border-zinc-800 rounded-full w-fit">
+                        <span class="w-2 h-2 rounded-full bg-[#0000ff] animate-pulse"></span>
+                        <span class="text-zinc-300 font-label-caps text-[10px] tracking-widest">AVAILABLE FOR CONSULTATION</span>
+                    </div>
+                    <h1 class="font-display-2xl text-6xl md:text-7xl lg:text-8xl uppercase leading-tight font-black">
+                        <span class="text-white block">Goran Louis</span>
+                        <span class="text-[#0000ff] block">Stephan</span>
+                    </h1>
+                </div>
+                
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-md border-y border-zinc-900 py-stack-md">
+                    <div class="flex flex-col">
+                        <span class="text-[#0000ff] font-label-caps text-xs mb-2">EXPERIENCE</span>
+                        <span class="text-white font-bold text-4xl mb-1">2+ Yrs</span>
+                        <span class="text-zinc-500 text-sm">Financial Services Industry</span>
+                    </div>
+                    <div class="flex flex-col border-t sm:border-t-0 sm:border-l border-zinc-900 pt-4 sm:pt-0 sm:pl-stack-md">
+                        <span class="text-[#0000ff] font-label-caps text-xs mb-2">CLIENTS</span>
+                        <span class="text-white font-bold text-4xl mb-1">45+</span>
+                        <span class="text-zinc-500 text-sm">Families Protected</span>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="portfolio-gallery.html" class="bg-[#0000ff] text-white px-10 py-4 rounded-full font-label-caps text-xs flex items-center gap-3 hover:bg-white hover:text-black transition-all duration-300 group">
+                        EXPLORE MY WORK
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                    <a href="services-contact.html#contact" class="bg-transparent border border-white text-white px-10 py-4 rounded-full font-label-caps text-xs hover:bg-white hover:text-black transition-all duration-300">
+                        LET'S TALK
+                    </a>
+                </div>
             </div>
-<div class="flex gap-8">
-<a class="text-gray-500 hover:text-[#81ecff] hover:glow-sm transition-all font-['Inter'] text-sm tracking-wide opacity-80 hover:opacity-100" href="#">LinkedIn</a>
-<a class="text-gray-500 hover:text-[#81ecff] hover:glow-sm transition-all font-['Inter'] text-sm tracking-wide opacity-80 hover:opacity-100" href="#">Instagram</a>
-<a class="text-gray-500 hover:text-[#81ecff] hover:glow-sm transition-all font-['Inter'] text-sm tracking-wide opacity-80 hover:opacity-100" href="#">Email</a>
-</div>
-</div>
-</footer>
-</body></html>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-zinc-900 mt-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-12 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-zinc-500 font-inter text-[10px] tracking-widest uppercase">© 2024 GORAN LOUIS STEPHAN. ALL RIGHTS RESERVED.</div>
+            <div class="flex gap-8">
+                <a class="text-zinc-500 hover:text-[#0000ff] transition-colors duration-200 text-[10px] tracking-widest font-inter uppercase" href="#">LINKEDIN</a>
+                <a class="text-zinc-500 hover:text-[#0000ff] transition-colors duration-200 text-[10px] tracking-widest font-inter uppercase" href="#">INSTAGRAM</a>
+                <a class="text-zinc-500 hover:text-[#0000ff] transition-colors duration-200 text-[10px] tracking-widest font-inter uppercase" href="#">EMAIL</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

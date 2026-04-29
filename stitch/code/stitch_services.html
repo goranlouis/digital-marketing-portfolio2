@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#e5e2e1",
+                    "surface-tint": "#bec2ff",
+                    "surface": "#121414",
+                    "primary-container": "#0000ff",
+                    "outline-variant": "#454558",
+                    "secondary-container": "#454747",
+                    "primary-fixed": "#e0e0ff",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "tertiary": "#c8c6c5",
+                    "error-container": "#93000a",
+                    "on-tertiary-container": "#bfbcbc",
+                    "surface-container-lowest": "#0d0e0f",
+                    "on-surface": "#e3e2e2",
+                    "on-secondary-fixed-variant": "#454747",
+                    "surface-bright": "#383939",
+                    "on-tertiary": "#313030",
+                    "on-primary-fixed": "#00006e",
+                    "error": "#ffb4ab",
+                    "primary": "#bec2ff",
+                    "on-surface-variant": "#c5c4db",
+                    "surface-container": "#1f2020",
+                    "background": "#000000",
+                    "on-background": "#e3e2e2",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "on-primary-fixed-variant": "#0000ef",
+                    "surface-container-high": "#292a2a",
+                    "tertiary-container": "#4d4c4c",
+                    "surface-container-highest": "#343535",
+                    "surface-dim": "#121414",
+                    "on-secondary-container": "#b4b5b5",
+                    "primary-fixed-dim": "#bec2ff",
+                    "on-error-container": "#ffdad6",
+                    "surface-variant": "#343535",
+                    "surface-container-low": "#1b1c1c",
+                    "secondary-fixed": "#e2e2e2",
+                    "inverse-on-surface": "#303031",
+                    "outline": "#8f8fa4",
+                    "inverse-primary": "#343dff",
+                    "on-primary": "#0001ac",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "on-secondary": "#2f3131",
+                    "on-primary-container": "#b3b7ff",
+                    "on-error": "#690005",
+                    "secondary": "#c6c6c7",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "inverse-surface": "#e3e2e2",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "vibrant-blue": "#0000FF"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1440px",
+                    "stack-sm": "12px",
+                    "gutter": "24px",
+                    "margin": "48px",
+                    "stack-md": "24px",
+                    "stack-lg": "64px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "display-2xl": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "body-base": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "display-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["30px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-2xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                    "body-base": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #000000; color: #e3e2e2; }
+        .swiss-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
+        .text-blue-vibrant { color: #0000FF; }
+        .bg-blue-vibrant { background-color: #0000FF; }
+        .border-blue-vibrant { border-color: #0000FF; }
+    </style>
+</head>
+<body class="font-body-base">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-12 py-6 bg-black border-b border-zinc-900">
+<div class="text-lg font-black tracking-tighter text-blue-vibrant">
+            GORAN LOUIS STEPHAN
+        </div>
+<div class="hidden md:flex gap-8">
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-zinc-500 hover:text-white transition-all duration-300" href="#">HOME</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-zinc-500 hover:text-white transition-all duration-300" href="#">PORTFOLIO</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-blue-vibrant border-b border-blue-600 pb-1 hover:text-white transition-all duration-300" href="#">RESUME/SERVICES</a>
+</div>
+<button class="bg-blue-vibrant text-white px-6 py-2 rounded-full font-inter uppercase tracking-widest text-xs font-bold scale-100 active:scale-95 transition-all">
+            GET IN TOUCH
+        </button>
+</nav>
+<main class="mt-32 px-12 max-w-7xl mx-auto">
+<!-- Experience Section -->
+<section class="mb-stack-lg">
+<span class="font-label-caps text-blue-vibrant mb-stack-sm block">RESUME</span>
+<h1 class="font-display-lg text-blue-vibrant mb-stack-lg">Experience</h1>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1: Graphic Design -->
+<div class="bg-[#0C0C0C] border border-[#1A1A1A] p-stack-md flex flex-col hover:border-white transition-all duration-300">
+<span class="material-symbols-outlined text-blue-vibrant mb-stack-md" data-icon="sparkles">colors_spark</span>
+<h3 class="font-headline-md text-white mb-stack-sm">Graphic Design</h3>
+<p class="font-body-sm text-zinc-400">Visual identity systems and technical layouts built for digital-first performance marketing.</p>
+</div>
+<!-- Card 2: Financial Services -->
+<div class="bg-blue-vibrant p-stack-md flex flex-col hover:brightness-110 transition-all duration-300">
+<span class="material-symbols-outlined text-white mb-stack-md" data-icon="layers">layers</span>
+<h3 class="font-headline-md text-white mb-stack-sm">Financial Services</h3>
+<ul class="font-body-sm text-white/90 space-y-2">
+<li>• Assisting Clients with New Business</li>
+<li>• Existing Policy Replacement</li>
+<li>• Future Planning</li>
+<li>• Whole Life, Term, IUL, Annuity</li>
+</ul>
+</div>
+<!-- Card 3: Digital Marketing -->
+<div class="bg-[#0C0C0C] border border-[#1A1A1A] p-stack-md flex flex-col hover:border-white transition-all duration-300">
+<span class="material-symbols-outlined text-blue-vibrant mb-stack-md" data-icon="leaderboard">leaderboard</span>
+<h3 class="font-headline-md text-white mb-stack-sm">Digital Marketing</h3>
+<p class="font-body-sm text-zinc-400">Data-backed growth strategies and full-funnel optimization for high-growth tech startups.</p>
+</div>
+</div>
+</section>
+<!-- Image Break (Contextual Visual) -->
+<div class="w-full h-96 mb-stack-lg overflow-hidden border border-[#1A1A1A]">
+<img class="w-full h-full object-cover desaturate hover:desaturate-0 transition-all duration-700" data-alt="A sophisticated architectural interior of a high-end corporate office with sleek glass partitions and minimalist black furniture. The lighting is cold and clinical, emphasizing a professional and digital-first atmosphere. Intense blue highlights catch the edges of the polished surfaces, creating a high-contrast and technically masterful visual style consistent with a premium Swiss design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHpNOYH7k6mqWOH8pCdjWl0OvZSxSM-zidg3sxmPxlfRjep-GfZJRDeCy3_bpuNe4vW9dvUKJLseWqUsmrBuM9obfmWtcM0LCx7MoXadJaqid2uE0kFE04J5M5E1tINQm20jhJ4uJYnMTBvUth-GnBzPmty4Rj8tdQRNgaSsYhoaFPfb9GUyddTbE0oU6H91jcjoZe6Pq6BbpME7RV6quVr86nl323wkncC5j3gVH_OK9Y_ccOZ3MuqSGujMGZOi05jEP-9mG1CglU"/>
+</div>
+<!-- Contact Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg pb-stack-lg">
+<!-- Left Side -->
+<div class="flex flex-col justify-center">
+<h2 class="font-display-2xl text-white mb-stack-md">
+                    Let's <span class="text-blue-vibrant">Connect.</span>
+</h2>
+<div class="mb-stack-md">
+<span class="font-label-caps text-blue-vibrant mb-unit block">EMAIL ADDRESS</span>
+<a class="font-headline-md text-white hover:text-blue-vibrant transition-colors" href="mailto:goranstephanbusiness@gmail.com">
+                        goranstephanbusiness@gmail.com
+                    </a>
+</div>
+<div class="flex gap-stack-sm mt-stack-sm">
+<a class="flex items-center gap-2 text-zinc-500 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+<span class="font-label-caps">LinkedIn</span>
+</a>
+<a class="flex items-center gap-2 text-zinc-500 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+<span class="font-label-caps">Instagram</span>
+</a>
+</div>
+</div>
+<!-- Right Side Form -->
+<div class="bg-[#0C0C0C] border border-[#1A1A1A] p-10">
+<h3 class="font-headline-md text-white mb-stack-md">Ready to start a project?</h3>
+<form class="space-y-stack-md">
+<div class="group border-b border-[#333333] focus-within:border-blue-vibrant transition-colors pb-2">
+<label class="font-label-caps text-zinc-500 group-focus-within:text-blue-vibrant block mb-1">NAME</label>
+<input class="w-full bg-transparent border-none text-white focus:ring-0 placeholder:text-zinc-700 font-body-base" placeholder="Your full name" type="text"/>
+</div>
+<div class="group border-b border-[#333333] focus-within:border-blue-vibrant transition-colors pb-2">
+<label class="font-label-caps text-zinc-500 group-focus-within:text-blue-vibrant block mb-1">EMAIL</label>
+<input class="w-full bg-transparent border-none text-white focus:ring-0 placeholder:text-zinc-700 font-body-base" placeholder="your@email.com" type="email"/>
+</div>
+<div class="group border-b border-[#333333] focus-within:border-blue-vibrant transition-colors pb-2">
+<label class="font-label-caps text-zinc-500 group-focus-within:text-blue-vibrant block mb-1">MESSAGE</label>
+<textarea class="w-full bg-transparent border-none text-white focus:ring-0 placeholder:text-zinc-700 font-body-base" placeholder="Tell me about your vision" rows="3"></textarea>
+</div>
+<button class="w-full bg-cyan-400 hover:bg-cyan-500 text-black font-bold py-4 font-label-caps tracking-widest transition-colors" type="submit">
+                        SEND MESSAGE
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 bg-black border-t border-zinc-900">
+<div class="font-inter uppercase tracking-tighter text-[10px] text-zinc-500">
+            © 2024 GORAN LOUIS STEPHAN. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-8">
+<a class="font-inter uppercase tracking-tighter text-[10px] text-zinc-500 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-colors duration-200" href="#">LINKEDIN</a>
+<a class="font-inter uppercase tracking-tighter text-[10px] text-zinc-500 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-colors duration-200" href="#">INSTAGRAM</a>
+<a class="font-inter uppercase tracking-tighter text-[10px] text-zinc-500 hover:text-blue-600 underline decoration-2 underline-offset-4 transition-colors duration-200" href="#">EMAIL</a>
+</div>
+</footer>
+</body></html>
